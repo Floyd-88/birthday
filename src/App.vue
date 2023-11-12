@@ -41,7 +41,7 @@ let table = ref("1");
 .wrapper_h_B {
   width: 500px;
   height: 694px;
-  background-image: url(/src/assets/img/HB2.jpg);
+  background-image: url(/src/assets/img/HB3.jpg);
   background-size: cover;
   color: white;
   font-family: "Pattaya", sans-serif;
