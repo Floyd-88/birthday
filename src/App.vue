@@ -1,13 +1,13 @@
 <script setup>
-import {ref } from 'vue'
-let name= ref('Уважаемые Александр и Кристина')
-let table = ref('1')
+import { ref } from "vue";
+let name = ref("Уважаемые Александр и Кристина");
+let table = ref("1");
 </script>
 
 <template>
   <div class="wrapper_h_B">
     <div class="walpers_block">
-      <div class="name">{{name}}</div>
+      <div class="name">{{ name }}</div>
       <div class="text">
         Приглашаем Вас <span>18 ноября</span> к <span>16:00</span> в ресторан
         <span>«Онегин»</span> по адресу: г. Ставрополь, Михайловское шоссе 28а.
@@ -18,19 +18,21 @@ let table = ref('1')
         хорошее настроение, это поможет фотографу и видеографу запечатлеть
         лучшие моменты вечера.
 
-        <p class="table">P.s. Ваш столик №<span>{{ table }}</span></p>
+        <p class="table">
+          P.s. Ваш столик №<span>{{ table }}</span>
+        </p>
       </div>
       <!-- <div class="block data">18/11/2023</div> -->
     </div>
   </div>
 
   <div>
-    <label for="name">Кому:</label><br>
+    <label for="name">Кому:</label><br />
     <input type="text" id="name" v-model="name" />
   </div>
 
   <div>
-    <label for="table">Номер столика:</label> <br>
+    <label for="table">Номер столика:</label> <br />
     <input type="text" id="table" v-model="table" />
   </div>
 </template>
@@ -38,8 +40,8 @@ let table = ref('1')
 <style scoped>
 .wrapper_h_B {
   width: 500px;
-  height: 90vh;
-  background-image: url("./assets/img/HB1.jpg");
+  height: 694px;
+  background-image: url(/src/assets/img/HB2.jpg);
   background-size: cover;
   color: white;
   font-family: "Pattaya", sans-serif;
@@ -62,19 +64,22 @@ let table = ref('1')
   );
   color: transparent;
   -webkit-background-clip: text;
-  padding-top: 145px;
+  padding-top: 147px;
+  padding-left: 10px;
 }
 .name {
-  font-size: 23px;
+  font-size: 24px;
   font-weight: bold;
-  border-bottom: 2px solid goldenrod;
-  margin-bottom: 5px;
+  border-bottom: 3px solid goldenrod;
+  margin-bottom: 7px;
+  padding-bottom: 2px;
 }
 .text {
-  width: 368px;
+  width: 425px;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.8px;
 }
 
 span {
